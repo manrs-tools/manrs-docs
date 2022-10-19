@@ -26,8 +26,8 @@ jobs:
           build_html: false
       - uses: actions/upload-artifact@v1
         with:
-          name: markdown
-          path: pdf
+          name: pdf
+          path: pdf/
 
   converttohtml:
     name: Build HTML
@@ -45,5 +45,5 @@ jobs:
           build_pdf: false
       - uses: actions/upload-artifact@v1
         with:
-          name: markdown
-          path: html
+          name: html
+          path: html/
