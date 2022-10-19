@@ -21,7 +21,7 @@ jobs:
           output_dir: pdf
           images_dir: markdown/media
           # for example <img src="./images/file-name.png">
-          image_import: ./media
+          image_import: media
           # Default is true, can set to false to only get PDF files
           build_html: false
       - uses: actions/upload-artifact@v1
@@ -40,7 +40,7 @@ jobs:
           output_dir: html
           images_dir: markdown/media
           # for example <img src="./images/file-name.png">
-          image_import: ./media
+          image_import: media
           # Default is true, can set to false to only get PDF files
           build_pdf: false
       - uses: actions/upload-artifact@v1
