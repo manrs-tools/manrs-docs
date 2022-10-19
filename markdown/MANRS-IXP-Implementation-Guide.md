@@ -12,11 +12,11 @@ MANRS can help IXPs build safe neighborhoods through the MANRS Actions. It also 
 
 MANRS has the following objectives:
 
--   Raise awareness of routing security problems and encourage the implementation of actions that can address them.
+-   Raise awareness of routing security problems and encourage the implementation of actions that can address them;
     
--   Promote a culture of collective responsibility toward the security and resilience of the Internet's global routing system.
+-   Promote a culture of collective responsibility toward the security and resilience of the Internet's global routing system;
     
--   Demonstrate the ability of the Internet industry to address routing security problems.
+-   Demonstrate the ability of the Internet industry to address routing security problems;
     
 -   Provide a framework to better understand and address issues relating to the security and resilience of the Internet's global routing system.
 
