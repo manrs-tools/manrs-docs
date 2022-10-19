@@ -1,0 +1,1 @@
+This directory contains the HTML files of the MANRS Guides.
