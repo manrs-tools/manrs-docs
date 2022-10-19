@@ -397,57 +397,45 @@ The below examples are borrowed from: [https://bgpfilterguide.nlnog.net/](https:
 
 Here is a sample script to fetch bogons from Cymru for use in OpenBGPD:
 
-> #!/usr/bin/python
+> #!/usr/bin/env python3
 >
 > import sys
->
-> import urllib2
->
+>import urllib2
 > import re
 >
 > ver = sys.argv\[1\]
 >
-> url = \"<https://www.team-cymru.org/Services/Bogons/fullbogons-ip>\" +
-> ver + \".txt\"
+> url = \"<https://www.team-cymru.org/Services/Bogons/fullbogons-ip>\" + ver + \".txt\"
 >
 > contents = urllib2.urlopen(url).read()
+> 
+>for line in contents.splitlines():
+> 	if re.match(\"\^#\",line):
+>		continue
+> 	else:
+>		print(\"deny from any prefix \" + line)
+> 
 >
-> for line in contents.splitlines():
->
-> if re.match(\"\^#\",line):
->
-> continue
->
-> else:
->
-> print(\"deny from any prefix \" + line)
->
-> BIRD
->
-> #!/usr/bin/python
->
-> import sys
->
+> 
+>BIRD
+> 
+>#!/usr/bin/env python3
+> 
+>import sys
 > import urllib2
->
-> import re
->
-> ver = sys.argv\[1\]
->
-> url = \"<https://www.team-cymru.org/Services/Bogons/fullbogons-ip>\" +
-> ver + \".txt\"
->
-> contents = urllib2.urlopen(url).read()
->
-> for line in contents.splitlines():
->
-> if re.match(\"\^#\",line):
->
-> continue
->
-> else:
->
-> print(line + \",\")
+>import re
+> 
+>ver = sys.argv\[1\]
+> 
+>url = \"<https://www.team-cymru.org/Services/Bogons/fullbogons-ip>\" + ver + \".txt\"
+> 
+>contents = urllib2.urlopen(url).read()
+> 
+>for line in contents.splitlines():
+> 	if re.match(\"\^#\",line):
+>		continue
+> 	else:
+> 		print(line + \",\")
 
 ## 1-5 Checking that RPKI validation works correctly
 
