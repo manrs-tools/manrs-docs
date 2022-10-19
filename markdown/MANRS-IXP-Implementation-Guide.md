@@ -145,62 +145,37 @@ RTR, defined in [RFC 6810](https://datatracker.ietf.org/doc/html/rfc6810) and [R
 Below is an example of how to configure BIRD to drop invalid routes:
 
 > roa4 table r4;
->
-> roa6 table r6;
->
+>roa6 table r6;
 > protocol rpki {
->
-> debug all;
->
-> roa4 { table r4; };
->
-> roa6 { table r6; };
->
-> \# Replace the below with your RPKI validator address
->
-> remote \"192.0.2.100\" port 8282;
->
-> retry keep 5;
->
-> refresh keep 30;
->
-> expire 600;
->
+>    debug all;
+>     roa4 { table r4; };
+>    roa6 { table r6; };
+> 
+>\# Replace the below with your RPKI validator address
+>     remote \"192.0.2.100\" port 8282;
+>    retry keep 5;
+>     refresh keep 30;
+>    expire 600;
 > }
 >
 > filter peer_in_v4 {
->
-> if (roa_check(r4, net, bgp_path.last) = ROA_INVALID) then
->
-> {
->
-> print \"Ignore RPKI invalid \", net, \" for ASN \", bgp_path.last;
->
-> reject;
->
-> }
->
-> accept;
->
-> }
->
-> protocol bgp {
->
-> debug all;
->
-> local as 65000;
->
-> neighbor 192.0.2.11 as 65001;
->
-> ipv4 {
->
-> import filter peer_in_v4;
->
-> export none;
->
-> };
->
-> }
+>    if (roa_check(r4, net, bgp_path.last) = ROA_INVALID) then 
+>     {
+>        print \"Ignore RPKI invalid \", net, \" for ASN \", bgp_path.last;
+>         reject;
+>    }
+>     accept;
+>}
+> 
+>protocol bgp {
+>     debug all;
+>    local as 65000;
+>     neighbor 192.0.2.11 as 65001;
+>    ipv4 {
+>         import filter peer_in_v4;
+>        export none;
+>     };
+>}
 
 Here is an example of how to configure openBGPd to drop INVALID routes (static table, no RTR support). After importing the rpki-client
 generated configuration:
