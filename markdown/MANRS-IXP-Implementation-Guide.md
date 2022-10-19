@@ -703,14 +703,14 @@ The IXP should also check that every new member has up-to-date contact informati
 
 Facilitating proper internal communication is important so that the IXP membership can know who to contact and how. Here are few recommendations for mailing lists to maintain:
 
--   Peering mailing list\
+-   **Peering mailing list**
     Facilitates communication between various individuals from the
     members who are directly involved with peering.
 
--   Technical mailing list\
+-   **Technical mailing list**
     Allows IXP members to reach the technical team managing the IXP.
 
--   Members mailing list\
+-   **Members mailing list**
     Facilitates IXP members to reach each other and also to allow for the team managing the IXP to easily send broadcast messages to all members.
 
 **4-2 External Communication**\
@@ -719,14 +719,14 @@ Publishing contact information on appropriate public fora allows external partie
 
 Here are few recommendations on public facing fora to consider:
 
--   PeeringDB
+-   **PeeringDB**
     PeeringDB is a freely available, user-maintained database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other
     interconnection facilities, and is the first stop in making interconnection decisions. It is vital that active IXPs maintain current contact data at PeeringDB.
     
--   IXP's own website
+-   **IXP's own website**
     An IXP's website should have easy to find contact information for those outside the IXP to use.
     
--   RIR Whois
+-   **RIR Whois**
     The IXP will obtain IP addresses from the regional RIR. Maintaining accurate and current data at the RIR is crucial to allow external parties to alert the IXP in the event of abuse of the IP addresses.
 
 **Action 5. Provide monitoring and debugging tools to the members.**
