@@ -451,9 +451,9 @@ against RPKI data, to see whether the RIB contains any RPKI invalid routes. If c
 
 The IXP actively promotes MANRS by encouraging its members to implement the appropriate MANRS Actions:
 
--   [[MANRS Actions for Network Operators]{.underline}](https://www.manrs.org/isps/)
+-   [MANRS Actions for Network Operators](https://www.manrs.org/isps/); and
     
--   [[MANRS Actions for CDN and Cloud Providers]{.underline}](https://www.manrs.org/cdn-cloud-providers/)
+-   [MANRS Actions for CDN and Cloud Providers](https://www.manrs.org/cdn-cloud-providers/).
 
 The encouragement can take different forms:
 
