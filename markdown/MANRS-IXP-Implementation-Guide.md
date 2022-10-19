@@ -22,7 +22,7 @@ MANRS has the following objectives:
 
 # IXPs are important partners in the MANRS community
 
-IXPs can be a collaborative focal point to discuss and promote the importance of routing security. To address the unique needs and concerns of IXPs, the community has separate set of MANRS actions for IXP participants.
+IXPs can be a collaborative focal point to discuss and promote the importance of routing security. To address the unique needs and concerns of IXPs, the community created a separate set of MANRS actions for IXP participants.
 
 # Eligibility criteria and proof of implementation
 
