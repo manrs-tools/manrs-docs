@@ -27,7 +27,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: pdf
-          path: pdf/*.pdf
+          path: pdf/**.pdf
 
   converttohtml:
     name: Build HTML
@@ -46,4 +46,4 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: html
-          path: html/*.html
+          path: html/**.html
