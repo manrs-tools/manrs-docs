@@ -86,17 +86,17 @@ customers that are going to be announced on the exchange. Then a set of filter r
 
 ![](media/ixp/image1.png)
 
-MANRS recommends the following steps for import filtering.
+MANRS recommends the following steps for import filtering:
 
 1.  Check if the IP prefix received from the member/customer is a Martian/bogon.
 
 > If the prefix updated by a peer is a Martian/bogon prefix, drop it; else go to step 2.
 
-2.  Check if the update has the BGP blackhole community
+2.  Check if the update contains the BGP blackhole community
 
 > If the update received has the BGP blackhole community, the Route Server changes the next hop of the update with the one of the server dummies and the prefix is accepted and stored in the RS's RIB; else go to step 3.
 
-3.  Check if updated prefix origin AS belongs to the set of allowed ASes
+3.  Check if the updated prefix origin AS belongs to the set of allowed ASes
 
 > The set of allowed ASes for a given peer is made of its own AS plus any additional AS listed as a customer in a registered AS-SET. If the origin AS of the updated prefix belongs to the allowed set, then go to step 4; else reject the update.
 
@@ -140,7 +140,7 @@ MANRS recommends the following steps for export filtering:
 
 Here is an example of how to configure BIRD - a commonly used route server - with Resource Public Key Infrastructure (RPKI) to Router Protocol, or RTR Protocol, to filter invalid routes.
 
-RTR, defined in [RFC 6810](https://datatracker.ietf.org/doc/html/rfc6810) and [RFC 8210](https://datatracker.ietf.org/doc/html/rfc8210), is a protocol that delivers validated prefix origin to routers. BIRD 2.0 supports RTR, though a manual reload is needed to revalidate routes on receipt of new ROAs.
+RTR, defined in [RFC 6810](https://datatracker.ietf.org/doc/html/rfc6810) and [RFC 8210](https://datatracker.ietf.org/doc/html/rfc8210), is a protocol that delivers validated prefix origin to routers. BIRD 2.0 supports RTR.
 
 Below is an example of how to configure BIRD to drop invalid routes:
 
