@@ -62,7 +62,7 @@ contained in the announcement, and the ROAs present in the database of the route
 [[RFC1918]](https://tools.ietf.org/html/rfc1918),
 [[RFC2544]](https://tools.ietf.org/html/rfc2544),
 [[RFC3927]](https://tools.ietf.org/html/rfc3927), 
-[RFC5735](https://tools.ietf.org/html/rfc5735),
+[[RFC5735]](https://tools.ietf.org/html/rfc5735)
 [[RFC5737]](https://tools.ietf.org/html/rfc5737),
 [[RFC6598]](https://tools.ietf.org/html/rfc6598) and
 [[RFC6890]](https://tools.ietf.org/html/rfc6890).
