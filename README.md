@@ -19,7 +19,7 @@ The HTML files of the guides can be found in the [html](https://github.com/manrs
 
 ## Contributing
 
-Everyone is welcome to contribute by submitting pull requests.
+Everyone is welcome to contribute by [creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) or by [creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue).
 
 ## Contact
 
