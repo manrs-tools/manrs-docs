@@ -454,7 +454,7 @@ Routing Policy
 - Route Dampening Policy
 - MED (Multi-Exit Discriminator) Support Policy
 
-# Global Validation - Facilitating validation of routing information on a global scale
+# Global Validation - Facilitate routing information on a global scale
 
 This is a **required** Action, either using an IRR and/or implementing RPKI:
 
