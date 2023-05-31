@@ -456,8 +456,7 @@ Routing Policy
 
 # Global Validation - Facilitating validation of routing information on a global scale
 
-This is a **required** Action, either using an IRR and/or implementing
-RPKI:
+This is a **required** Action, either using an IRR and/or implementing RPKI:
 
 -   *Network operator is able to communicate to their adjacent networks which announcements are correct;*
 -   *Network operator has publicly documented routing policy, ASNs and prefixes that are intended to be advertised to external parties.*
